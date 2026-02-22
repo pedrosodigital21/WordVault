@@ -221,3 +221,26 @@ li:hover {
     background: #ccc;
     color: #666;
 }
+
+#wordList::-webkit-scrollbar {
+    width: 6px;
+}
+
+#wordList::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+#wordList::-webkit-scrollbar-thumb {
+    background: #4e73df;
+    border-radius: 10px;
+}
+
+#wordList::-webkit-scrollbar-thumb:hover {
+    background: #3b5bdb;
+}
+
+.translate-btn.off {
+    background: #ccc !important;
+    color: #666 !important;
+}
