@@ -3,44 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📘 Word Vault</title>
+    <title>Word Vault 📘</title>
 
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📘</text></svg>">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📘</text></svg>">
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-light">
 
-<div class="container">
-    <h1>📘 Word Vault</h1>
-    <div class="counter" id="wordCounter">Total words: 0</div>
+<div class="container py-4">
+    <div class="card shadow-lg">
+        <div class="card-body">
+            <h1 class="card-title text-center mb-3">Word Vault 📘</h1>
+            <p id="wordCounter" class="text-center fw-semibold mb-4">Total words: 0</p>
 
-    <div class="input-group">
-        <input type="text" id="wordInput" placeholder="Enter word...">
-        <input type="text" id="translationInput" placeholder="Enter translation...">
-        <button onclick="addWord()">Add</button>
-    </div>
+            <!-- Input group -->
+            <div class="row g-2 mb-3">
+                <div class="col-md-5">
+                    <input type="text" id="wordInput" class="form-control" placeholder="Enter word...">
+                </div>
+                <div class="col-md-5">
+                    <input type="text" id="translationInput" class="form-control" placeholder="Enter translation...">
+                </div>
+                <div class="col-md-2 d-grid">
+                    <button class="btn btn-primary" onclick="addWord()">Add</button>
+                </div>
+            </div>
 
-    <div class="search-section">
-        <div class="search-bar">
-            <i class="fas fa-search"></i>
-            <input type="text" id="searchInput" placeholder="Search..." oninput="searchWords()">
+            <div class="row g-2 mb-3 align-items-center">
+                <div class="col-md-7 position-relative">
+                    <input type="text" id="searchInput" class="form-control ps-5" placeholder="Search..." oninput="searchWords()">
+                    <i class="fas fa-search position-absolute top-50 translate-middle-y ms-3 text-muted"></i>
+                </div>
+                <div class="col-md-2 d-grid">
+                    <button id="toggleTranslate" class="btn btn-secondary" onclick="toggleTranslations()">
+                        <i class="fas fa-language"></i>
+                    </button>
+                </div>
+                <div class="col-md-3 d-grid">
+                    <button class="btn btn-primary" onclick="exportJSON()">Export JSON</button>
+                </div>
+            </div>
+
+            <ul id="wordList" class="list-group mb-3" style="max-height: 350px; overflow-y: auto;"></ul>
+            <div id="emptyMessage" class="text-center text-muted">No words added yet.</div>
+            <div id="uniqueness" class="text-center fst-italic text-secondary mt-2">
+                This app is unique: no ads, no subscriptions, no distractions — just your words.
+            </div>
         </div>
-        <button class="translate-btn" id="toggleTranslate" onclick="toggleTranslations()">
-            <i class="fas fa-language"></i>
-        </button>
-        <button onclick="exportJSON()">Export JSON</button>
-    </div>
-
-    <ul id="wordList"></ul>
-    <div id="emptyMessage" class="empty">No words added yet.</div>
-    <div class="uniqueness">
-        This app is unique: no ads, no subscriptions, no distractions — just your words.
     </div>
 </div>
 
 <script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
